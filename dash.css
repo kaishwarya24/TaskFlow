@@ -1,0 +1,227 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    min-height: 100vh;
+    background: #2c3e50;
+    color: white;
+    padding-top: 30px;
+  }
+  
+  .sidebar .nav-link {
+    color: #ecf0f1;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .sidebar .nav-link:hover {
+    color: #3498db;
+  }
+  
+  .sidebar .nav-link.active {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .sidebar .nav-item {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar h4 {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Main Content */
+  .content {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .card .display-6 {
+    font-size: 2.25rem;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  #lineChart {
+    max-width: 100%;
+    height: 400px;
+    margin-top: 30px;
+  }
+  
+ 
+  #barChart {
+    max-width: 100%;
+    height: 400px;
+    margin-top: 30px;
+  }
+
+canvas {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Tooltip styling */
+  .tooltip {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 767px) {
+    .navbar-nav .nav-link {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    .content {
+      padding: 1rem;
+    }
+  
+    .card-body {
+      padding: 1.5rem;
+    }
+  }
+  
+
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .sidebar {
+      position: fixed;
+      width: 60px;
+      padding-top: 20px;
+      overflow-x: hidden;
+      transition: width 0.3s ease;
+    }
+  
+    .sidebar:hover {
+      width: 200px;
+    }
+  
+    .sidebar h4 {
+      display: none;
+    }
+  
+    .sidebar .nav-link {
+      font-size: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  
+    .sidebar:hover .nav-link {
+      font-size: 1rem;
+      padding-left: 10px;
+    }
+  
+    .sidebar .nav-item {
+      text-align: center;
+    }
+  
+    .sidebar:hover .nav-item {
+      text-align: left;
+    }
+  }
+  /* Mobile Sidebar Toggle */
+@media (max-width: 767px) {
+    .sidebar {
+      position: fixed;
+      left: -250px;
+      top: 0;
+      width: 200px;
+      height: 100vh;
+      background-color: #2c3e50;
+      transition: left 0.3s ease-in-out;
+      z-index: 999;
+    }
+  
+    .sidebar.show {
+      left: 0;
+    }
+  
+    .toggle-btn {
+      position: fixed;
+      left: 15px;
+      top: 15px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 12px;
+      font-size: 1.2rem;
+      z-index: 1000;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .content {
+      padding: 1rem;
+      margin-top: 60px;
+    }
+  
+    .card {
+      margin-bottom: 1.5rem;
+    }
+  
+    .card-body {
+      padding: 1.25rem;
+    }
+  }
+  
+  /* Fluid container */
+  .container-fluid {
+    padding: 1rem;
+  }
+  
+  /* Make cards stack on smaller screens */
+  @media (max-width: 992px) {
+    .row .col-md-4,
+    .row .col-md-6,
+    .row .col-md-3 {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
