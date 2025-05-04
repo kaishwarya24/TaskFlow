@@ -3,7 +3,7 @@
 
 **TaskFlow** is a responsive and minimal task management web application built using **HTML**, **JavaScript**, and **Bootstrap 5**. This project focuses on leveraging Bootstrap's utility classes and components to achieve a clean and mobile-first layout with minimal custom styling.
 
-🔗 **Live Site:** [TaskFlow on GitHub Pages](https://kaishwarya24.github.io/TaskFlow/index.html)
+🔗 **Live Site:** [Demo](https://kaishwarya24.github.io/TaskFlow/index.html)
 
 ---
 
